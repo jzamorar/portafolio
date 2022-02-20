@@ -16,11 +16,12 @@
   --link-color: #964b05;
   --title-color: #964b05;
   --text-color: #222;
-  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --white-alpha-color: rgba(255, 255, 255, 0.3);
+  --white-alpha-color-porfolio: rgba(255, 255, 255, 0.7);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --bg-alpha-color-hero: linear-gradient(
     0deg,
-    rgba(3, 6, 25, 0.7) 40%,
+    var(--second-color) 20%,
     rgba(1, 7, 47, 0) 91%
   );
   --font: "Raleway", sans-serif;
@@ -324,8 +325,8 @@ p {
     justify-content: var(--hero-justify-content);
     background-image: linear-gradient(
       90deg,
-      rgba(3, 6, 25, 0.7) 40%,
-      rgba(1, 7, 47, 0) 91%
+      var(--second-color) 35%,
+      rgba(255, 255, 255, 0) 91%
     );
   }
 }
@@ -463,12 +464,16 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   background-color: var(--gray-dark-color);
+  transition: all 1s ease-in-out;
 }
 
 progress::-moz-progress-bar {
   background-color: var(--gray-dark-color);
 }
 
+progress::-webkit-progress-value:hover {
+  background-color: var(--third-color);
+}
 .progress {
   margin: 1rem auto;
 }
@@ -660,7 +665,7 @@ progress::-moz-progress-bar {
 .portfolio-card svg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .portfolio-card-info {
@@ -670,7 +675,7 @@ progress::-moz-progress-bar {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: var(--white-alpha-color);
+  background-color: var(--white-alpha-color-porfolio);
   color: var(--black-color);
   opacity: 0;
   pointer-events: none;
@@ -725,6 +730,8 @@ progress::-moz-progress-bar {
 }
 
 .service-card svg {
+  width: 2.5rem;
+  height: 2.5rem;
   margin-bottom: 1.25rem;
   fill: var(--icon-color);
 }
