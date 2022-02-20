@@ -20,7 +20,7 @@
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --bg-alpha-color-hero: linear-gradient(
     0deg,
-    rgba(3, 6, 25, 0.7) 40%,
+    rgba(3, 6, 25, 0.7) 20%,
     rgba(1, 7, 47, 0) 91%
   );
   --font: "Raleway", sans-serif;
