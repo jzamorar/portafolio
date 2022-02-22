@@ -21,8 +21,8 @@
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --bg-alpha-color-hero: linear-gradient(
     0deg,
-    var(--second-color) 20%,
-    rgba(1, 7, 47, 0) 91%
+    var(--second-color) 15%,
+    rgba(1, 7, 47, 0) 50%
   );
   --font: "Raleway", sans-serif;
   --max-width: 100vw;
@@ -329,21 +329,31 @@ p {
 @media screen and (min-width: 1000px) {
   .hero-image {
     background-position: right center;
+    background-size: contain;
   }
   .hero-image-opacity {
     padding-bottom: 0;
     align-content: center;
     justify-content: var(--hero-justify-content);
+
     background-image: linear-gradient(
       90deg,
       var(--second-color) 35%,
       rgba(255, 255, 255, 0) 91%
     );
   }
+  .hero-image-title {
+    color: var(--white-color);
+  }
+  .hero-image {
+    background-size: contain;
+  }
+  .hero-image-opacity {
+    justify-content: left;
+  }
 }
 
 /*
-
 /* ---------- Menu ---------- */
 .menu-btn {
   outline: thin solid var(--first-color);
