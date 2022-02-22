@@ -329,7 +329,7 @@ p {
 @media screen and (min-width: 1000px) {
   .hero-image {
     background-position: right center;
-    background-size: contain;
+    background-size: conver;
   }
   .hero-image-opacity {
     padding-bottom: 0;
@@ -345,9 +345,7 @@ p {
   .hero-image-title {
     color: var(--white-color);
   }
-  .hero-image {
-    background-size: contain;
-  }
+
   .hero-image-opacity {
     justify-content: left;
   }
