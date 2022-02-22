@@ -16,7 +16,7 @@
   --link-color: #964b05;
   --title-color: #964b05;
   --text-color: #222;
-  --white-alpha-color: rgba(255, 255, 255, 0.3);
+  --white-alpha-color: rgba(255, 255, 255, 0.7);
   --white-alpha-color-porfolio: rgba(255, 255, 255, 0.7);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --bg-alpha-color-hero: linear-gradient(
@@ -129,9 +129,9 @@ p {
 }
 
 .carousel {
-  margin: 2rem auto;
-  padding: 2rem 0;
-  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 2.5rem 0; */
+  max-width: 100vw;
   text-align: center;
   overflow-x: hidden;
   background-color: var(--carousel-bg-color);
@@ -139,14 +139,20 @@ p {
 
 .carousel .slides {
   padding-left: 0;
+
   /* 100% por cada slide */
   width: 400%;
   display: flex;
   list-style: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.5s ease-in-out;
   animation: carousel-slide 12s ease-in-out 3s;
 }
-
+.slide {
+  width: 100%;
+}
 .carousel input {
   display: none;
 }
@@ -276,7 +282,7 @@ p {
 
 .hero-image {
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
   background-image: var(--hero-image);
   background-repeat: no-repeat;
   background-size: var(--hero-bg-size);
@@ -287,16 +293,20 @@ p {
 
 .hero-image-opacity {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
 
-  background-image: var(--bg-alpha-color-hero);
-  background-color: var(--hero-opacity-color);
-  align-content: flex-end;
-  justify-content: center;
-  text-align: center;
+  background-image: var(--hero-opacity-bg-color);
+  background-color: var(--hero-opacity-bg-color);
+  justify-content: var(--hero-justify-content);
 
-  padding-bottom: 25vh;
+  padding-bottom: 0;
+  align-content: center;
+  justify-content: var(--hero-justify-content);
+
+  text-align: center;
+  padding: 0;
+  /* padding-bottom: 25vh; */
 }
 .hero-image-content {
   display: grid;
@@ -311,11 +321,11 @@ p {
   color: var(--hero-text-color);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .hero-image-opacity {
     padding-bottom: 15vh;
   }
-}
+} */
 @media screen and (min-width: 1000px) {
   .hero-image {
     background-position: right center;
