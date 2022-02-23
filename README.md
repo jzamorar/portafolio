@@ -4,4 +4,4 @@ Repositorio portafolio de trabajo
 
 ## Proyecto
 
--[Landing Page - Mi Portafolio Profesional](https://jzamorar.github.io/portafolio/)
+-[Mi Portafolio Profesional](https://jzamorar.github.io/portafolio/)
