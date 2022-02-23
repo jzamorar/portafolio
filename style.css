@@ -329,6 +329,7 @@ p {
 @media screen and (min-width: 1000px) {
   .hero-image {
     background-position: right center;
+
     background-size: conver;
   }
   .hero-image-opacity {
@@ -706,15 +707,15 @@ progress::-webkit-progress-value:hover {
   padding: 1rem;
   background-color: var(--white-alpha-color-porfolio);
   color: var(--black-color);
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
 }
 
-.portfolio-card:hover .portfolio-card-info {
+/* .portfolio-card:hover .portfolio-card-info {
   opacity: 1;
   pointer-events: auto;
-}
+} */
 
 .portfolio-card-info > div {
   padding: 1rem;
@@ -822,14 +823,12 @@ progress::-webkit-progress-value:hover {
     justify-content: space-between;
     align-content: center;
   }
-
   .section-title-hero {
     margin-top: 4rem;
   }
   .contact-cards {
     grid-template-columns: repeat(4, 24%);
   }
-
   .footer {
     margin-bottom: 0;
   }
