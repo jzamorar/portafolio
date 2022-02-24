@@ -593,7 +593,7 @@ progress::-webkit-progress-value:hover {
   /* animation: animation-section-title 3s ease-in-out infinite; */
 }
 .section-title-hero {
-  margin-top: 0.75rem;
+  margin-top: 1.55rem;
   margin-bottom: 1rem;
 }
 /* .hero-image-opacity .color-white {
@@ -807,7 +807,7 @@ progress::-webkit-progress-value:hover {
     align-content: center;
   }
   .section-title-hero {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
   .contact-cards {
     grid-template-columns: repeat(4, 24%);
