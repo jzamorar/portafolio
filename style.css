@@ -320,8 +320,6 @@ p {
 @media screen and (min-width: 400px) {
   .hero-image {
     background-position-x: center;
-
-    /* background-position-y: -57vh; */
   }
   .hero-image-title {
     font-size: 7vw;
