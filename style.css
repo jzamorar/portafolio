@@ -127,7 +127,7 @@ p {
 
 .carousel {
   margin: 0 auto;
-  padding: 2.5rem 0;
+  padding: 0;
   max-width: 100vw;
   text-align: center;
   overflow-x: hidden;
@@ -711,16 +711,25 @@ progress::-webkit-progress-value:hover {
   height: 100%;
   padding: 1rem;
   background-color: var(--white-alpha-color-porfolio);
-  color: var(--first-color);
-  text-align: center;
-
+  /* color: var(--text-color); */
   pointer-events: none;
   /* transition: all 0.5s ease-in-out; */
 }
 
-/* .portfolio-card-info img:hover {
-  opacity: 1;
-} */
+.portfolio-card-info h3 {
+  color: var(--second-color);
+}
+.portfolio-card-info h4 {
+  color: var(--first-color);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.portfolio-card-info p {
+  color: var(--text-color);
+}
+.portfolio-card-info ul {
+  margin: 0;
+}
 
 /* ff
 .portfolio-card:hover .portfolio-card-info {
