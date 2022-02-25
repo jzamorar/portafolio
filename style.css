@@ -818,7 +818,7 @@ progress::-webkit-progress-value:hover {
   }
 
   .section,
-  .portfolio {
+  #testimonios {
     padding-top: calc(var(--header-height) - 0.5rem);
   }
 
