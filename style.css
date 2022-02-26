@@ -17,7 +17,7 @@
   --title-color: #964b05;
   --text-color: #222;
   --white-alpha-color: rgba(255, 255, 255, 0.7);
-  --white-alpha-color-porfolio: rgba(255, 255, 255, 0.8);
+  --white-alpha-color-porfolio: rgba(255, 255, 255, 0.75);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --bg-alpha-color-hero: linear-gradient(
     0deg,
@@ -710,7 +710,7 @@ progress::-webkit-progress-value:hover {
   padding: 1rem;
   background-color: var(--white-alpha-color-porfolio);
   /* color: var(--text-color); */
-  pointer-events: none;
+  /* pointer-events: auto; */
   /* transition: all 0.5s ease-in-out; */
 }
 
@@ -729,9 +729,7 @@ progress::-webkit-progress-value:hover {
   margin: 0;
 }
 
-/* ff
-.portfolio-card:hover .portfolio-card-info {
-  opacity: 1;
+/* .portfolio-card:hover .portfolio-card-info {
   pointer-events: auto;
 } */
 
