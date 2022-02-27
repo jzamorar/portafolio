@@ -124,7 +124,10 @@ p {
     transform: translateX(-75%);
   } */
 }
-
+blockquote {
+  margin-block: 0;
+  margin-inline: 0.5em;
+}
 .carousel {
   margin: 0 auto;
   padding: 0;
@@ -151,6 +154,7 @@ p {
 .slide {
   width: 100%;
 }
+
 .carousel input {
   display: none;
 }
@@ -536,7 +540,7 @@ progress::-webkit-progress-value:hover {
   margin-left: auto;
   margin-right: auto;
 
-  max-width: var(--max-width);
+  max-width: var(--ax-width);
 }
 
 @keyframes animation-grayscale {
@@ -799,6 +803,10 @@ progress::-webkit-progress-value:hover {
   .services .section-title {
     grid-column: span 2;
   }
+  blockquote {
+    /* margin-block: 0; */
+    margin-inline: 2em;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -845,7 +853,12 @@ progress::-webkit-progress-value:hover {
   .services .section-title {
     grid-column: span 3;
   }
+  blockquote {
+    /* margin-block: 0; */
+    margin-inline: 4em;
+  }
 }
+
 svg:hover {
   fill: var(--first-color);
 }
