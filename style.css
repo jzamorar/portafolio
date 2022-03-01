@@ -112,12 +112,12 @@ p {
     transform: translateX(0%);
   }
 
-  /* 25% {
-    transform: translateX(-25%);
-  } */
+  33% {
+    transform: translateX(-33%);
+  }
 
-  50% {
-    transform: translateX(-50%);
+  66% {
+    transform: translateX(-66%);
   }
 
   /* 75% {
@@ -142,7 +142,7 @@ blockquote {
   padding-left: 0;
 
   /* 100% por cada slide */
-  width: 200%;
+  width: 300%;
   display: flex;
   list-style: none;
   text-align: center;
@@ -174,16 +174,16 @@ blockquote {
 }
 
 #slide-2:checked ~ .slides {
-  transform: translateX(-50%);
-}
-/* 
-#slide-3:checked ~ .slides {
-  transform: translateX(-50%);
+  transform: translateX(-33%);
 }
 
+#slide-3:checked ~ .slides {
+  transform: translateX(-66%);
+}
+/* 
 #slide-4:checked ~ .slides {
   transform: translateX(-75%);
-} */
+}  */
 
 #slide-1:checked ~ .slides-nav label#dot-1,
 #slide-2:checked ~ .slides-nav label#dot-2,
